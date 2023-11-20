@@ -1,0 +1,959 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: main;
+  src: url(../../font/MinnePetat-OV40d.ttf);
+}
+.main {
+  overflow-x: hidden;
+}
+.main .headTop {
+  background-color: #ffdd2b;
+  height: 280vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .main .headTop {
+    height: 200vh;
+  }
+}
+.main .headTop .mainPic {
+  height: 200vh;
+  z-index: 99;
+  position: absolute;
+  top: -15%;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .main .headTop .mainPic {
+    height: 130vh;
+    top: -10%;
+  }
+}
+.main .headTop .mainPic > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .headTop .blue1 {
+  position: absolute;
+  top: -15%;
+  right: -15%;
+}
+@media screen and (max-width: 768px) {
+  .main .headTop .blue1 {
+    top: -5%;
+    right: -5%;
+  }
+}
+.main .headTop .blue2 {
+  transform: rotate(60deg);
+  position: absolute;
+  top: 25%;
+  left: -50%;
+}
+.main .headTop .socialTop {
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+}
+.main .headTop .socialTop > h2 {
+  text-transform: uppercase;
+  color: #fd4e22;
+  font-family: main;
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 5%;
+}
+@media screen and (max-width: 576px) {
+  .main .headTop .socialTop > h2 {
+    font-size: 12px;
+    padding-left: 0%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .main .headTop .socialTop > h2 {
+    font-size: 18px;
+  }
+}
+.main .headTop .socialTop .menuTop {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .headTop .socialTop .menuTop > a {
+  text-transform: uppercase;
+  color: #fd4e22;
+  font-family: main;
+  font-weight: bold;
+  font-size: 22px;
+}
+@media screen and (max-width: 800px) {
+  .main .headTop .socialTop .menuTop > a {
+    font-size: 50%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .main .headTop .socialTop .menuTop > a {
+    font-size: 16px;
+  }
+}
+.main .headTop .socialTop .socialPicTop {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .headTop .socialTop .socialPicTop > figure {
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .main .headTop .socialTop .socialPicTop > figure {
+    width: 20%;
+  }
+}
+.main .headTop .logoTop {
+  position: absolute;
+  top: 35vh;
+  left: 3%;
+}
+.main .headTop .circleTop {
+  top: 50%;
+  left: 3%;
+  height: 70vh;
+  width: 70vh;
+  background-color: #fd4e22;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .main .headTop .circleTop {
+    left: 0;
+    top: 40%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main .headTop .circleTop {
+    display: none;
+  }
+}
+.main .headTop .circleTop > figure {
+  position: absolute;
+}
+.main .headTop .circleTop > figure:nth-of-type(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .headTop .circleTop > figure:nth-of-type(2) {
+  top: 3%;
+  left: 3%;
+  width: 94%;
+  animation: topCircle 10s linear infinite;
+}
+.main .headTop .circleTop > figure:nth-of-type(3) {
+  top: 18%;
+  left: 10%;
+  width: 80%;
+}
+@keyframes topCircle {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.main .headTop .aboutTop {
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  z-index: 200;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .main .headTop .aboutTop {
+    bottom: 0;
+  }
+}
+.main .headTop .aboutTop > p {
+  font-family: main;
+  font-weight: bold;
+  font-size: 50px;
+  color: #72c1c3;
+  line-height: 70px;
+}
+@media screen and (max-width: 576px) {
+  .main .headTop .aboutTop > p {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  .main .headTop .aboutTop > p {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+.main .tickets {
+  display: flex;
+  background-color: #fd4e22;
+  height: 220vh;
+}
+.main .tickets .edgeTicket {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  border-bottom: 30px solid #fd4e22;
+}
+@media screen and (max-width: 768px) {
+  .main .tickets .edgeTicket {
+    top: -4%;
+  }
+}
+.main .tickets .ticketBox {
+  overflow: hidden;
+  height: 20%;
+}
+@media screen and (max-width: 768px) {
+  .main .tickets .ticketBox {
+    height: 10%;
+  }
+}
+.main .tickets .ticketBox .ticket {
+  width: 130px;
+  height: 80px;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+}
+.main .tickets .ticketBox .ticket:hover {
+  animation: tickets 0.4s alternate infinite;
+}
+@media screen and (min-width: 992px) {
+  .main .tickets .ticketBox .ticket {
+    width: 270px;
+    height: 150px;
+  }
+}
+.main .tickets .ticketBox .t1 {
+  top: 0%;
+  right: -5%;
+}
+.main .tickets .ticketBox .t2 {
+  top: 10%;
+  right: 20%;
+  transform: rotate(20deg);
+}
+.main .tickets .ticketBox .t3 {
+  top: 0%;
+  left: -7%;
+}
+.main .tickets .ticketBox .t4 {
+  top: 30%;
+  left: 7%;
+  transform: rotate(-20deg);
+}
+.main .tickets .tourTitle {
+  height: 20vh;
+}
+@media screen and (max-width: 576px) {
+  .main .tickets .tourTitle {
+    transform: translateY(-300%);
+  }
+}
+@media screen and (min-width: 576px) and (min-width: 768px) {
+  .main .tickets .tourTitle {
+    transform: translateY(-100%);
+  }
+}
+.main .tickets .tourTitle > h2 {
+  font-family: main;
+  color: #ffdd2b;
+  font-weight: bold;
+  font-size: 55px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .main .tickets .tourTitle > h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main .tickets .tourTitle > h2 {
+    font-size: 90px;
+  }
+}
+.main .tickets .tourDates {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 2%;
+  bottom: 0;
+  justify-content: space-around;
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  .main .tickets .tourDates {
+    transform: translateY(-25%);
+  }
+}
+.main .tickets .tourDates > div {
+  height: 30vh;
+  margin: 5% 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+.main .tickets .tourDates > div > h4 {
+  font-family: main;
+  font-weight: bold;
+  color: #ffc0e9;
+  text-align: center;
+  font-size: 35px;
+}
+.main .tickets .tourDates > div > a {
+  width: 80%;
+  height: 20%;
+  background-color: #ffdd2b;
+  color: #fd4e22;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: main;
+  font-weight: bold;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .main .tickets .tourDates > div > a {
+    font-size: 20px;
+  }
+}
+.main .tickets .tourDates > div:nth-of-type(2) > a, .main .tickets .tourDates > div:nth-of-type(4) > a {
+  transform: rotate(-5deg);
+}
+.main .tickets .tourDates > div:nth-of-type(3) > a {
+  transform: rotate(5deg);
+}
+.main .tickets .personTicket {
+  width: 45%;
+  height: 30%;
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: -3%;
+  left: 0;
+  cursor: pointer;
+}
+.main .tickets .personTicket:hover {
+  animation: personTicket 0.07s alternate infinite;
+}
+.main .poster {
+  background-color: #59cbff;
+  height: 120vh;
+}
+@media screen and (max-width: 425px) {
+  .main .poster {
+    height: 100vh;
+  }
+}
+.main .poster .innerPoster {
+  justify-content: center;
+  align-content: center;
+}
+.main .poster .innerPoster .buyButtonPoster {
+  width: 300px;
+  z-index: 100;
+  height: 100px;
+  background-color: #ffdd2b;
+  border: 3px solid black;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.main .poster .innerPoster .buyButtonPoster:hover {
+  animation: buyButton 0.1s alternate infinite;
+}
+@keyframes buyButton {
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+.main .poster .innerPoster .buyButtonPoster > a {
+  font-family: main;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.main .poster .innerPoster > h2 {
+  color: black;
+  font-family: main;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  z-index: 100;
+}
+@media screen and (max-width: 425px) {
+  .main .poster .innerPoster > h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 576px) {
+  .main .poster .innerPoster > h2 {
+    font-size: 50px;
+  }
+}
+.main .poster .innerPoster > figure {
+  position: absolute;
+  width: 50%;
+  height: 35%;
+}
+@media screen and (max-width: 576px) {
+  .main .poster .innerPoster > figure {
+    height: 40%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .main .poster .innerPoster > figure {
+    height: 40%;
+    width: 40%;
+  }
+}
+.main .poster .innerPoster > figure:nth-of-type(1), .main .poster .innerPoster > figure:nth-of-type(2), .main .poster .innerPoster > figure:nth-of-type(3) {
+  width: 30%;
+  height: 15%;
+  z-index: 70;
+}
+.main .poster .innerPoster > figure:nth-of-type(4), .main .poster .innerPoster > figure:nth-of-type(5), .main .poster .innerPoster > figure:nth-of-type(6) {
+  z-index: 50;
+}
+.main .poster .innerPoster > figure:nth-of-type(1) {
+  top: 70%;
+  left: 10%;
+  height: 20%;
+}
+.main .poster .innerPoster > figure:nth-of-type(2) {
+  top: 5%;
+  left: 10%;
+}
+.main .poster .innerPoster > figure:nth-of-type(3) {
+  top: 70%;
+  left: 50%;
+}
+.main .poster .innerPoster > figure:nth-of-type(4) {
+  top: -5%;
+  left: 65%;
+  transform: rotate(-10deg);
+  z-index: 2;
+}
+.main .poster .innerPoster > figure:nth-of-type(5) {
+  top: 40%;
+  left: 50%;
+  transform: rotate(10deg);
+}
+@media screen and (max-width: 576px) {
+  .main .poster .innerPoster > figure:nth-of-type(5) {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  .main .poster .innerPoster > figure:nth-of-type(5) {
+    left: 60%;
+  }
+}
+.main .poster .innerPoster > figure:nth-of-type(6) {
+  top: 20%;
+  left: -10%;
+  transform: rotate(40deg);
+}
+@media screen and (max-width: 576px) {
+  .main .poster .innerPoster > figure:nth-of-type(6) {
+    top: 10%;
+    left: -25%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  .main .poster .innerPoster > figure:nth-of-type(6) {
+    left: -20%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main .poster .innerPoster > figure {
+    height: 600px;
+    width: 500px;
+  }
+}
+.main .mv {
+  height: 300vh;
+  background-color: #a67dfe;
+  background-image: url(../img/mv/Vector-music.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 425px) {
+  .main .mv {
+    height: 120vh;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 992px) {
+  .main .mv {
+    height: 170vh;
+  }
+}
+.main .mv .cam {
+  width: 35%;
+  height: 15%;
+  z-index: 50;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+.main .mv .cam > img {
+  position: absolute;
+}
+.main .mv .cam > img:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+.main .mv .cam > img:nth-of-type(2) {
+  width: 73%;
+  height: 67%;
+  z-index: 45;
+  top: 14%;
+  left: 12%;
+  transform: rotate(-3deg);
+}
+.main .mv .flash {
+  width: 30%;
+  height: 15%;
+  z-index: 50;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.main .mv .flash > img {
+  width: 100%;
+  height: 100%;
+}
+.main .mv .apple, .main .mv .spotify, .main .mv .youtube {
+  width: 30%;
+  z-index: 50;
+  position: absolute;
+  transform: rotate(20deg);
+}
+.main .mv .apple > img, .main .mv .spotify > img, .main .mv .youtube > img {
+  width: 100%;
+  height: 100%;
+}
+.main .mv .apple {
+  top: 20%;
+  left: 5%;
+}
+.main .mv .youtube {
+  transform: rotate(-20deg);
+  top: 5%;
+  left: 0;
+}
+.main .mv .spotify {
+  top: 40%;
+  right: 0;
+}
+.main .mv .milchPic {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+.main .mv .milchPic > img {
+  width: 100%;
+  height: 100%;
+}
+.main .mv .tv {
+  position: absolute;
+  z-index: 50;
+  height: 30%;
+  bottom: 0%;
+  left: 0;
+  width: 50%;
+}
+.main .mv .tv > img {
+  position: absolute;
+}
+.main .mv .tv > img:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+.main .mv .tv > img:nth-of-type(2) {
+  width: 80%;
+  height: 70%;
+  z-index: 45;
+  top: 15%;
+  left: 10%;
+}
+.main .mv .square {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.main .mv .square .rows {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.main .mv .square .rows > span {
+  flex-grow: 1;
+  display: flex;
+  z-index: 1;
+  width: 10%;
+  height: 100%;
+  border-radius: 5%;
+  background-color: #a706ff;
+  box-shadow: 0 0 10px #7015a1;
+  margin: 0 1px;
+  transition: 0.1s;
+  opacity: 0;
+}
+.main .mv .square .rows > span:hover {
+  visibility: visible;
+  opacity: 1;
+}
+.main .milch {
+  height: 120vh;
+  background-image: url(../img/milch/pink-bg-2.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 425px) {
+  .main .milch {
+    height: 100vh;
+  }
+}
+.main .milch .titleMilch {
+  width: 100%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5%;
+  font-size: 500%;
+  font-family: main;
+  text-align: center;
+  color: #ffdd2b;
+  z-index: 60;
+}
+@media screen and (max-width: 425px) {
+  .main .milch .titleMilch {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 1200px) {
+  .main .milch .titleMilch {
+    font-size: 250%;
+  }
+}
+.main .milch .bodyPic {
+  height: 80%;
+  width: 70%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+@media screen and (max-width: 425px) {
+  .main .milch .bodyPic {
+    width: 77%;
+  }
+}
+.main .milch .bodyPic > img {
+  width: 100%;
+  height: 100%;
+}
+.main .milch .drag {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.main .milch .hair1 {
+  width: 25%;
+  height: 35%;
+  top: 15%;
+  left: 36%;
+}
+.main .milch .hair2 {
+  width: 25%;
+  height: 45%;
+  top: 50%;
+  left: 0;
+}
+.main .milch .nose1 {
+  width: 8%;
+  top: 46%;
+  left: 44%;
+}
+.main .milch .nose2 {
+  width: 8%;
+  top: 25%;
+  left: 10%;
+}
+.main .milch .leye1 {
+  height: 10%;
+  top: 43%;
+  left: 38%;
+}
+.main .milch .leye2 {
+  height: 15%;
+  top: 40%;
+  left: 65%;
+}
+.main .milch .leye3 {
+  height: 15%;
+  top: 40%;
+  left: 23%;
+}
+.main .milch .reye1 {
+  height: 12%;
+  top: 42%;
+  left: 49%;
+}
+.main .milch .reye2 {
+  height: 12%;
+  top: 40%;
+  left: 85%;
+}
+.main .milch .reye3 {
+  height: 12%;
+  top: 25%;
+  left: 75%;
+}
+.main .milch .mouth1 {
+  width: 15%;
+  top: 15%;
+  left: 23%;
+}
+.main .milch .mouth2 {
+  width: 15%;
+  top: 58%;
+  left: 40%;
+}
+.main .milch .mouth3 {
+  width: 15%;
+  top: 58%;
+  left: 70%;
+}
+.main .merch {
+  height: 200vh;
+  background-color: #45e054;
+}
+@media screen and (max-width: 425px) {
+  .main .merch {
+    height: 130vh;
+  }
+}
+.main .merch .edgeMerch {
+  width: 100%;
+  position: absolute;
+  top: -7%;
+  left: 0;
+}
+.main .merch .develop {
+  font-family: main;
+  text-transform: capitalize;
+  text-align: center;
+}
+.main .merch .socialFoot {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 5%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main .merch .socialFoot > a {
+  border: 2px solid black;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.main .merch .socialFoot > a > i {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100% 0;
+}
+.main .merch .buyMerch {
+  width: 85%;
+  height: 17%;
+  z-index: 10;
+  margin: 5% auto;
+  border: 2px solid black;
+  border-radius: 200px;
+  display: flex;
+  background-color: #45e054;
+  transition: 0.4s;
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .main .merch .buyMerch {
+    height: 20%;
+  }
+}
+.main .merch .buyMerch > a {
+  color: white;
+  font-family: main;
+  font-size: 80px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .main .merch .buyMerch > a {
+    font-size: 220%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main .merch .buyMerch > a {
+    font-size: 150%;
+  }
+}
+.main .merch .buyMerch > span {
+  font-family: main;
+  font-size: 80px;
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  right: 25%;
+  top: 10%;
+  transition: 0.2s;
+  visibility: hidden;
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .main .merch .buyMerch > span {
+    font-size: 220%;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main .merch .buyMerch > span {
+    font-size: 150%;
+    top: 10%;
+  }
+}
+.main .merch .buyMerch:hover {
+  background-color: black;
+}
+.main .merch .buyMerch:hover > span {
+  visibility: visible;
+}
+.main .merch .buyMerch:hover > span:nth-of-type(1) {
+  top: 0%;
+  right: 15%;
+  transform: rotate(-10deg);
+}
+.main .merch .buyMerch:hover > span:nth-of-type(2) {
+  top: 20%;
+  right: 23%;
+  transform: rotate(10deg);
+}
+@media screen and (max-width: 768px) {
+  .main .merch .buyMerch:hover > span:nth-of-type(2) {
+    top: 20%;
+  }
+}
+.main .merch .cartMerch {
+  height: 60%;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 425px) {
+  .main .merch .cartMerch {
+    height: 50%;
+  }
+}
+.main .merch .cartMerch > img {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .merch .cartMerch > img:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+.main .merch .cartMerch > img:nth-of-type(2) {
+  transform: rotate(-5deg);
+  width: 40%;
+  height: 60%;
+  top: 10%;
+  right: 0;
+  z-index: 5;
+}
+.main .merch .cartMerch > img:nth-of-type(3) {
+  transform: rotate(-5deg);
+  width: 40%;
+  height: 60%;
+  top: 35%;
+  left: 0;
+  z-index: 5;
+}
+.main .merch .cartMerch > img:nth-of-type(4) {
+  transform: rotate(5deg);
+  width: 35%;
+  height: 60%;
+  top: 15%;
+  left: 40%;
+}
+.main .merch .cartMerch > img:nth-of-type(5) {
+  transform: rotate(-5deg);
+  width: 35%;
+  height: 60%;
+  top: 27%;
+  left: 23%;
+}
+
+@keyframes tickets {
+  to {
+    transform: rotate(5deg);
+  }
+}
+@keyframes personTicket {
+  to {
+    transform: rotate(-5deg) scaleX(-1);
+  }
+}/*# sourceMappingURL=master.css.map */
